@@ -31,16 +31,18 @@ If you find any mistakes, let me know ([linusmetzler.me](http://linusmetzler.me)
 ## Alternate Installation 
 In your X Childtheme put both language Files in the following folder:
 
-  framework/lang
+`framework/lang`
 
 and
 
 in your functions.php the following:
 
-  add_action( 'after_setup_theme', 'my_child_theme_setup' );
-  function my_child_theme_setup() {
-      load_child_theme_textdomain( '__x__', get_stylesheet_directory() . '/framework/lang' );
-  }
+```
+add_action( 'after_setup_theme', 'my_child_theme_setup' );
+ function my_child_theme_setup() {
+  load_child_theme_textdomain( '__x__', get_stylesheet_directory() . '/framework/lang' );
+}
+```
 
 Souce: https://community.theme.co/forums/topic/language-po-files-and-child-theme/#post-146225
 
