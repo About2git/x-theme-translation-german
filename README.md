@@ -35,7 +35,7 @@ In your X Childtheme put both language Files in the following folder:
 
 and
 
-in your functions.php the following:
+in your `functions.php` the following:
 
 ```
 add_action( 'after_setup_theme', 'my_child_theme_setup' );
